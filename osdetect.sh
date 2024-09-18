@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 if type -t wevtutil &> /dev/null
 then
   OS=MSWin
