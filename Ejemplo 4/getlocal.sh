@@ -11,6 +11,9 @@
 #cmds.txt is a file with list of commands to run
 #
 #SepCmds - separate the commands from the line of input
+
+#El siguiente código requiere del archivo cmds.txt guardado en la misma ubicación para funcionar.
+
 function SepCmds()
 {
   LCMD=${ALINE%%|*} #<11>
