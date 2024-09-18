@@ -1,5 +1,11 @@
 #!/bin/bash
 
+#Asegúrate de tener top, htop, vmstat, e iostat instalados en tu sistema.
+#Puedes instalarlos usando los siguientes comandos:
+#sudo apt-get install procps
+#sudo apt-get install htop
+#sudo apt-get install sysstat
+
 # Umbrales de alerta
 CPU_THRESHOLD=80
 MEMORY_THRESHOLD=80
