@@ -1,5 +1,13 @@
 #!/bin/bash
 
+#Asegúrate de tener nmap y netcat instalados en tu sistema.
+#Puedes instalarlos usando los siguientes comandos:
+#sudo apt-get install nmap
+#sudo apt-get install netcat
+
+#Antes de ejecutar el script, inicia el servicio SSH con el siguiente comando:
+#sudo systemctl start ssh.service
+
 # Solicitar la dirección IP o el rango de IPs al usuario
 read -p "Introduce la dirección IP o el rango de IPs a escanear: " ip_range
 
@@ -19,3 +27,6 @@ while read -r line; do
     nc -zv $ip $port 2>&1 | grep -q "open" && echo "Puerto $port en $ip está abierto"
   done
 done < nmap_results.txt
+
+#Guarda el archivo y hazlo ejecutable con el siguiente comando:
+#sudo chmod +x port_scan2.sh
